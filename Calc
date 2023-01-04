@@ -1,0 +1,29 @@
+import java.util.Scanner;
+public class calculator {
+    public static void main(String []args) {
+        int a,b,ch;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter first number=");
+        a=sc.nextInt();
+        System.out.println("Enter second number=");
+        b=sc.nextInt();
+                System.out.println("1->Addition 2->Subtraction 3->Multiply 4->Divide Enter your choice");
+        ch=sc.nextInt();
+        if(ch==1)
+            System.out.println("Addition="+(a+b));
+        else if(ch==2)
+            System.out.println("Subtraction="+(a-b));
+        else if(ch==3)
+            System.out.println("Multiplication="+(a*b));
+        else if(ch==4)
+        {
+            if(b==0)
+        System.out.println("Please choose a number greater than 0 and execute again");
+        else
+    
+            System.out.println("Division="+(a/b));
+        }
+        else
+            System.out.println("Please choose from the given options");
+    }
+}
